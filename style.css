@@ -276,6 +276,9 @@ header .btn_mobile {
     text-transform: uppercase;
     cursor: pointer;
 }
+#portfolio .container .card button:hover {
+    background: var(--terceiro);
+}
 #portfolio .container .cards {
     position: relative;
     width: 100%;
