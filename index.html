@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagem/favicon03.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script></script>
+    
+    <title>Portfolio | ESG</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imagem/Logo ESG sem slogan.png" alt="Logo ESG Technology">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="menu_mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="btn_mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+
+                <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                
+            </div>
+            <div class="title">
+                <h1>Creative</h1>
+                <h2>developer</h2>
+                <h3>Front end developer</h3>
+            </div>
+        </div>
+    </main>
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Eu sou um desenvolvedor Front-end</h1>
+                <p>Minha relação com a tecnologia sempre esteve ligada desde o momento que eu comecei a trabalho na área financeira, pois ambas sempre caminharam juntas. Com o passar o tempo meu gosto por tecnologia só aumentou, por causa do grande número de desafios e soluções que podemos gerar com a tecnologia. Atualmente o meu objetivo, e migrar de área, por isso estou em um curso de Fullstack na Kenzie Academy, focado em Front End e Back End.</p>
+                <div class="box_title">
+
+                    <p>90%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+                    <p>80%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>CSS</span>
+                    <p>87%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>Javascript</span>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1">
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="./imagem/01.png" alt="">
+                    <h1>HTML / CSS</h1>
+                    <p>O projeto consiste em criar uma pagina para controle financeiro básico usando React e Typescript</p>
+                    <button><a class="acesso" href="">Acesso ao Projeto</a></button>
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <img src="./imagem/02.png" alt="">
+                    <h1>Design</h1>
+                    <p>Descriminar o projeto neste campo!!!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime praesentium, natus numquam mollitia necessitatibus ut aut ratione asperiores ab quos!</p>
+                    <button>Contrate-me</button>
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <img src="./imagem/03.png" alt="">
+                    <h1>Studio</h1>
+                    <p>Descriminar o projeto neste campo!!!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime praesentium, natus numquam mollitia necessitatibus ut aut ratione asperiores ab quos!</p>
+                    <button>Contrate-me</button>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="conteudo">
+                <div class="dado_contato">
+                    <h1>Entre em Contato Comigo!</h1>
+                    <div class="linha"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>esgomes230174@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+55 (11) 94028-9357</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Guarulhos - SP - Brasil</span>
+                </div>
+                <div class="formulario">
+                    <h1>Preencha o formulário</h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="Informe seu E-mail">
+                    <input type="text" placeholder="Qual o seu nome?">
+                    <textarea placeholder="Digite a sua Mensagem:"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright 2022 - <a href="">ESG Technology</a> - Todos os direitos Reservados</span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $(".btn_mobile").click(function() {
+                    $(".menu_mobile").slideToggle("slow")
+                })
+            })
+    </script>
+</body>
+</html>
